@@ -6,7 +6,7 @@ Heart Disease Prediction<br>
 Parkinson's Disease Prediction<br>
 ## Input Requirements:
 
-**Technologies Used**:<pre> Python
+**Technologies Used**:<pre>Python
                             Streamlit
                             Machine Learning
                             Pickle for model serialization
