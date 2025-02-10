@@ -11,7 +11,7 @@ Parkinson's Disease Prediction<br>
                             Machine Learning
                             Pickle for model serialization
                        </pre>
-**Prerequisites**:<pre>     python 3.8+
+**Prerequisites**:<pre>python 3.8+
                             Streamlit</pre>
 
 **Required libraries**:<pre>scikit-learn
