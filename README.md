@@ -5,6 +5,7 @@ Diabetes Prediction<br>
 Heart Disease Prediction<br>
 Parkinson's Disease Prediction<br>
 ## Input Requirements:
+<pre>
 **Technologies Used**: Python<br>
                        Streamlit<br>
                        Machine Learning<br>
@@ -18,3 +19,4 @@ Parkinson's Disease Prediction<br>
                        streamlit-option-menu<br>
                        
 **Run this Application**: streamlit run app.py<br>
+</pre>
