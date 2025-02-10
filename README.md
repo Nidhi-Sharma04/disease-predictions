@@ -5,18 +5,18 @@ Diabetes Prediction<br>
 Heart Disease Prediction<br>
 Parkinson's Disease Prediction<br>
 ## Input Requirements:
-<pre>
-**Technologies Used**: Python<br>
-                       Streamlit<br>
-                       Machine Learning<br>
-                       Pickle for model serialization<br>
-                       
-**Prerequisites**:     Python 3.8+<br>
-                       Streamlit<br>
 
-**Required libraries**:scikit-learn<br>
-                       streamlit<br>
-                       streamlit-option-menu<br>
+**Technologies Used**:<pre> Python
+                            Streamlit
+                            Machine Learning
+                            Pickle for model serialization
+                       </pre>
+**Prerequisites**:<pre>     python 3.8+
+                            Streamlit</pre>
+
+**Required libraries**:<pre>scikit-learn
+                            streamlit
+                            streamlit-option-menu</pre>
                        
-**Run this Application**: streamlit run app.py<br>
+**Run this Application**:<pre>streamlit run app.py
 </pre>
