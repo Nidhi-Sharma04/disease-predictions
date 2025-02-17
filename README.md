@@ -14,9 +14,10 @@ Parkinson's Disease Prediction<br>
 **Prerequisites**:<pre>python 3.8+
                             Streamlit</pre>
 
-**Required libraries**:<pre>scikit-learn
-                            streamlit
-                            streamlit-option-menu</pre>
+**Libraries & Frameworks:**<pre>NumPy & Pandas – Data Processing 📊
+                                Scikit-learn – Machine Learning 🤖
+                                Streamlit – Web Application 🌐:</pre>
+                      
                        
 **Run this Application**:<pre>streamlit run app.py
 </pre>
