@@ -16,7 +16,7 @@ Parkinson's Disease Prediction<br>
 
 **Libraries & Frameworks:**<pre>NumPy & Pandas – Data Processing 📊
                                 Scikit-learn – Machine Learning 🤖
-                                Streamlit – Web Application 🌐:</pre>
+                                Streamlit – Web Application 🌐</pre>
                       
                        
 **Run this Application**:<pre>streamlit run app.py
