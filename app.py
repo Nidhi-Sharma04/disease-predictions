@@ -148,7 +148,19 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 st.markdown("""
-    <hr>
-    <p style='text-align: center; color: gray;'>Made by Nidhi Sharma☺️ | © 2025</p>
+    <hr style="border: 0.5px solid #ddd; margin-top: 2rem;">
+
+    <div style='text-align: center; padding: 10px 0; color: #333; font-size: 15px;'>
+
+        <p>🔬 <b>Average model accuracy:</b> <span style='color: green;'>Above 80%</span></p>
+
+        <p style='margin-top: 10px;'>
+            Built by <b>Nidhi Sharma☺️</b> <br>
+            <span style='font-size: 13px; color: gray;'>© 2025 Disease Prediction App</span>
+        </p>
+
+    </div>
 """, unsafe_allow_html=True)
+
