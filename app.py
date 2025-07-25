@@ -20,7 +20,7 @@ with st.sidebar:
     selected = option_menu(
         "Disease Prediction",  
         ["Diabetes", "Heart Disease", "Parkinson's Disease"],  
-        icons=['activity', 'heart', 'brain'],  
+        icons=['activity', 'heart', 'capsule'],  
         menu_icon='hospital-fill',  
         default_index=0  
     )
