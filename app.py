@@ -150,7 +150,7 @@ if __name__ == "__main__":
     main()
 
 st.markdown("""<hr style="margin-top: 30px;">
-<div style='text-align: center; color: gray; font-size: 14px;'>
+<div style='text-align: center; color: black; font-size: 14px;'>
     🔍 Model accuracy: <b>Above 80%</b> | Made by <b>Nidhi Sharma👩‍💻</b>
 </div>
 """, unsafe_allow_html=True)
