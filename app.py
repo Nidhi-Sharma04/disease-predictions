@@ -19,7 +19,7 @@ parkinson_model = load_model(parkinson_model_path)
 with st.sidebar:
     selected = option_menu(
         "Disease Prediction",  
-        ["Diabetes", "Heart Disease", "Parkinson's    Disease"],  
+        ["Diabetes", "Heart Disease", "Parkinson's Disease"],  
         icons=['activity', 'heart', 'capsule'],  
         menu_icon='hospital-fill',  
         default_index=0  
