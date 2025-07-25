@@ -7,6 +7,7 @@ from streamlit_option_menu import option_menu
 
 # Set the page title and icon
 st.set_page_config(page_title="Disease Prediction", page_icon="🧑‍⚕️", layout="centered")
+st.markdown("""<style>section[data-testid="stSidebar"] > div:first-child {background-color: #CCD2E8;}</style>""", unsafe_allow_html=True)
 
 # Function to set background image
 def set_background(image_file):
