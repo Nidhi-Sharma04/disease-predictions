@@ -2,7 +2,39 @@ import pickle
 import os
 import streamlit as st
 from streamlit_option_menu import option_menu
+def set_background(image_file):
+    with open(image_file, "rb") as image:
+        encoded = image.read()
+    st.markdown(
+        f"""
+        <style>
+        .stApp {{
+            background-image: url("data:image/png;base64,{encoded.encode('base64').decode()}");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+        }}
+
+        .stApp::before {{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.65);
+            z-index: -1;
+        }}
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+
+# Set the background image
+
 st.set_page_config(page_title="Disease Prediction", page_icon="🧑‍⚕️", layout="wide", initial_sidebar_state="expanded")
+set_background("background.png")
 working_dir = os.path.dirname(os.path.abspath(__file__))
 def load_model(path):
     try:
