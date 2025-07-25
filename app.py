@@ -20,6 +20,7 @@ def set_background(image_file):
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
+            color: black;
         }}
         </style>
         """,
