@@ -66,7 +66,6 @@ def heart_disease_prediction_page():
     with col2:
         sex = st.selectbox("Sex", [0, 1], format_func=lambda x: "Female" if x == 0 else "Male")
         cholesterol = st.number_input("Cholesterol",  step=0.1)
-        max_heart_rate = st.number_input("Max Heart Rate",  step=0.1)
         st_slope = st.number_input("Slope of Peak Exercise ST Segment",  step=0.1)
         thalassemia = st.selectbox("Thalassemia", [0, 1, 2], format_func=lambda x: {0: "Normal", 1: "Fixed Defect", 2: "Reversible Defect"}[x])
     
@@ -77,7 +76,7 @@ def heart_disease_prediction_page():
         maximum_heart_rate = st.number_input("Maximum Heart Rate", min_value=0.0, step=0.1)
     if st.button("Heart Disease Test Result"):
         user_input = [age, sex, chestpain, resting_blood_pressure, cholesterol, 
-                      fasting_blood_sugar, resting_ecg, max_heart_rate, 
+                      fasting_blood_sugar, resting_ecg, 
                       exercise_induced_angina, st_depression, st_slope, 
                       maximum_heart_rate, major_vessels, thalassemia]
         
