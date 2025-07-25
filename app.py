@@ -1,39 +1,32 @@
-import pickle
-import os
 import streamlit as st
+import pickle
+import numpy as np
+import os
+import base64
 from streamlit_option_menu import option_menu
+
+# Set the page title and icon
+st.set_page_config(page_title="Disease Prediction", page_icon="🧑‍⚕️", layout="centered")
+
+# Function to set background image
 def set_background(image_file):
-    with open(image_file, "rb") as image:
-        encoded = image.read()
+    with open(image_file, "rb") as file:
+        encoded_string = base64.b64encode(file.read()).decode()  # decode() converts bytes to str
     st.markdown(
         f"""
         <style>
         .stApp {{
-            background-image: url("data:image/png;base64,{encoded.encode('base64').decode()}");
+            background-image: url("data:image/jpeg;base64,{encoded_string}");
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
-            background-position: center;
-        }}
-
-        .stApp::before {{
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 100%;
-            background-color: rgba(255, 255, 255, 0.65);
-            z-index: -1;
         }}
         </style>
         """,
         unsafe_allow_html=True
     )
 
-# Set the background image
-
-st.set_page_config(page_title="Disease Prediction", page_icon="🧑‍⚕️", layout="wide", initial_sidebar_state="expanded")
+# Set background image (make sure 'background.jpeg' is present in the same folder or update the path)
 set_background("background.jpg")
 working_dir = os.path.dirname(os.path.abspath(__file__))
 def load_model(path):
