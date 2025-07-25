@@ -148,3 +148,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+st.markdown("""
+    <hr>
+    <p style='text-align: center; color: gray;'>Made by Nidhi Sharma☺️ | © 2025</p>
+""", unsafe_allow_html=True)
