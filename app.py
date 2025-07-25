@@ -25,7 +25,7 @@ with st.sidebar:
         default_index=0  
     )
 def diabetes_prediction_page():
-    st.title("Diabetes Prediction")
+    st.title("Diabetes Prediction 🩺 ")
     col1, col2, col3 = st.columns(3)
     
     with col1:
@@ -53,7 +53,7 @@ def diabetes_prediction_page():
         else:
             st.warning("Please fill in all fields")
 def heart_disease_prediction_page():
-    st.title("Heart Disease Prediction")
+    st.title("Heart Disease Prediction 🫀")
     col1, col2, col3 = st.columns(3)
     
     with col1:
@@ -87,7 +87,7 @@ def heart_disease_prediction_page():
         else:
             st.success("You don't have Heart Disease")
 def parkinsons_prediction_page():
-    st.title("Parkinson's Disease Prediction")
+    st.title("Parkinson's Disease Prediction 🧠")
     cols = st.columns(3)
     input_fields = [
         "MDVP:Fo(Hz)", "MDVP:Fhi(Hz)", "MDVP:Flo(Hz)", 
